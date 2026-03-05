@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Fondo negro y centrado total */
+.canvas-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+/* Columna centrada: canvas + botón */
+.page {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Holder del canvas: fijo 1100 x 800 */
+.canvas {
+  width: 1100px;
+  height: 600px;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Evita gaps raros */
+.canvas canvas {
+  display: block;
+}
+
+/* Botón centrado debajo */
+.btn {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.06rem;
+}
+
+.btn:hover { background: rgba(255,255,255,0.14); }
+.btn:active { transform: translateY(1px); }
+
+.instructions {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* (Opcional) si quieres que en pantallas pequeñas no se corte:
+   descomenta esto y se escalará manteniendo proporción.
+
+@media (max-width: 1160px), (max-height: 900px) {
+  .page { width: min(1100px, 92vw); }
+  .canvas { width: min(1100px, 92vw); height: calc(min(1100px, 92vw) * (800 / 1100)); }
+}
+*/
