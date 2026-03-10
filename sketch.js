@@ -1,13 +1,17 @@
 // --- Textures (posa aquí els teus 5-6 JPGs a /assets) ---
 const TEXTURE_PATHS = [
+  "assets/step02.jpg",
   "assets/step01.jpg",
   "assets/step03.jpg",
+  "assets/step03-eur.jpg",
   "assets/step04.jpg",
+  "assets/step04-eur.jpg",
   "assets/step05.jpg",
+  "assets/step05-eur.jpg",
   "assets/step06.jpg",
+  "assets/step06-eur.jpg",
   "assets/step07.jpg",
   "assets/step08.jpg",
-  "assets/step02.jpg",
 ];
 
 let textures = [];
